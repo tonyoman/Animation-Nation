@@ -1,0 +1,35 @@
+div#one {
+    height: 100px;
+    width: 100%;
+    background: #fbd266;
+    animation: slidein 4s linear 4s infinite alternate;
+  }
+  
+  div#two {
+    height: 100px;
+    width: 100%;
+    background: #d76735;
+    animation-name: transition;
+    animation-duration: 4s;
+
+  }
+  
+  div#three {
+    height: 100px;
+    width: 100%;
+    background: #8fb0a9;
+    animation: slidein 3s linear 4s infinite alternate;
+
+  }
+
+  
+  @keyframes slidein {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  } 
+
+  @keyframes transition {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
